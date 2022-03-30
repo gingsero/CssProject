@@ -1,34 +1,34 @@
 
-var firstView = document.getElementById("first_view")
-var secondView = document.getElementById("second_view")
-var thirdView = document.getElementById("third_view")
+var firstView = document.getElementById("_first_view")
+var secondView = document.getElementById("_second_view")
+var thirdView = document.getElementById("_third_view")
 
-var metaRecogText = document.getElementById("meta_recog_text")
+var metaRecogText = document.getElementById("_meta_recog_text")
 
 function clickClassChoiceBtn (c) {
     firstView.classList.add('hide')
     secondView.classList.remove('hide')
 
     countingStart() // 3,2,1 완료 후 meta 데이터 실행
-    setTimeout(function(){
+    setTimeout(() => {
         pushMetaTextSetTimeout(c)
-    }, 0)
+    }, 5000)
+
 }
 
 function countingStart() {
     let ary = [3, 2, 1]
-    for(let i = 1; i <= ary.length; i++){
-        setTimeout(function(){
-            metaRecogText.innerText = '' + ary[i - 1]
-        }, 1000 * i);
-    }
+    ary.map((value, index) => {
+        setTimeout(() => {
+            metaRecogText.innerText = '' + value
+        }, 1000 * (index + 1))
+    })
 }
 
 function pushMetaTextSetTimeout(c) {
-    for(let i = 1; i <= js_data.length; i++){
-        setTimeout(function(){
-            console.log('js_data : ' + js_data[i - 1])
-            metaRecogText.innerText = js_data[i - 1]
-        }, 5000 * i);
-    }
+    js_data.map((value, index) => {
+        setTimeout(() => {
+            metaRecogText.innerText = value
+        }, 5000 * index)
+    })
 }

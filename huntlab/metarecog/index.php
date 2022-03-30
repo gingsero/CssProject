@@ -14,21 +14,23 @@ $data = array("기름", "노트북", "병원", "제주도", "스페인", "국자
     <link rel="stylesheet" href="../css/metarecog.css?00">
 </head>
 <body class="background">
-    <div class="" id="first_view">
-        <button class="btn_01" onclick="clickClassChoiceBtn('low')"> 초급 </button>
-        <button class="btn_02" onclick="clickClassChoiceBtn('mid')"> 초급 </button>
-        <button class="btn_03" onclick="clickClassChoiceBtn('high')"> 초급 </button>
+    <div class="first_view" id="_first_view">
+        <button class="class_btn btn_01" onclick="clickClassChoiceBtn('low')"> 초급 </button>
+        <button class="class_btn btn_02" onclick="clickClassChoiceBtn('mid')"> 중급 </button>
+        <button class="class_btn btn_03" onclick="clickClassChoiceBtn('high')"> 고급 </button>
     </div>
-    <div class="hide" id="second_view">
-        <p id="meta_recog_text" style="font-size: 200px"></p>
+    <div class="second_view hide" id="_second_view">
+        <p class="meta_recog_text" id="_meta_recog_text"></p>
     </div>
 
-    <div class="hide" id="third_view hide">
+    <div class="third_view hide" id="_third_view">
         <!-- modal view -->
     </div>
 </body>
 <script>
-    var js_data = <?php echo json_encode($data); ?>
+    let js_data = new Array();
+    js_data = <?php echo json_encode($data); ?>;
+    js_data.push(" 종료 ")
 </script>
-<script type="application/javascript" src="../js/metarecog.js"></script>
+<script type="application/javascript" src="../js/metarecog.js?01"></script>
 </html>
