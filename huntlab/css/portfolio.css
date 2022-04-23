@@ -45,11 +45,9 @@ header .gnb_btn:hover {
 .home_area {
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 60px;
     text-align: center;
-    position: relative;
 }
-
 .home_area::after {
     width: 100%;
     height: 100%;
@@ -62,7 +60,31 @@ header .gnb_btn:hover {
     left: 0;
     z-index: -1;
 }
-
 .home_area .home_title {
     font-size: 50px;
+    font-weight: bolder;
+    color: indianred;
+}
+.home_area .home_line_rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    width: 70px;
+
+}
+.home_area .home_describe {
+    font-size: 20px;
+    font-weight: bolder;
+    color: indianred;
+}
+.home_area .home_more_btn {
+    background-color:#bf5e5e;
+    border-radius:40px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:21px 31px;
+    text-decoration:none;
 }

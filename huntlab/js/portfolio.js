@@ -4,6 +4,7 @@ var gnbBtnPortfolio = document.getElementById("_gnb_btn_portfolio")
 var gnbBtnBlog = document.getElementById("_gnb_btn_blog")
 var gnbBtnContact = document.getElementById("_gnb_btn_contact")
 
+var homeMoreBtn = document.getElementById("_home_more_btn")
 /*var header = document.getElementsByTagName('header');
 var $page = $('.page-start'); //색상이 변할 부분
 var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
@@ -23,3 +24,5 @@ gnbBtnAbout.onclick = function() { location.href = "#_about" }
 gnbBtnPortfolio.onclick = function() { location.href = "#_portfolio" }
 gnbBtnBlog.onclick = function() { location.href = "#_blog" }
 gnbBtnContact.onclick = function() { location.href = "#_contact" }
+
+homeMoreBtn.onclick = function() { location.href = "#_about" }
