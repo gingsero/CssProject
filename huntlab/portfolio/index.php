@@ -16,22 +16,25 @@
             <span class="gnb_btn" id="_gnb_btn_blog">Blog</span>
             <span class="gnb_btn" id="_gnb_btn_contact">Contact</span>
         </nav>
+        <span>KDH'S Portfolio</span>
     </header>
 
     <div class="wrap">
-        <div class="content home" id="_home">
-            <img src="../image/unsplash.jpg"/>
+        <div class="home_area" id="_home">
+            <br />
+            <p class="home_title">- 김대희 -</p>
+            <p class="home_title">웹 개발자 포트폴리오</p>
         </div>
-        <div class="content about" id="_about">
+        <div class="about_area" id="_about">
             About
         </div>
-        <div class="content portfolio" id="_portfolio">
+        <div class="portfolio_area" id="_portfolio">
             Portfolio
         </div>
-        <div class="content blog" id="_blog">
+        <div class="blog_area" id="_blog">
             Blog
         </div>
-        <div class="content contact" id="_contact">
+        <div class="contact_area" id="_contact">
             Contact
         </div>
     </div>
